@@ -1,0 +1,288 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.resume-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column; /* Размещаем элементы в столбик */
+  gap: 10px; /* Расстояние между строками */
+}
+
+.skill-item {
+  display: flex;
+  align-items: center; /* Выравниваем текст и изображение по центру вертикали */
+  justify-content: space-between; /* Устанавливаем фиксированное расстояние между текстом и изображением */
+}
+
+.skill-item p {
+  flex: 1; /* Растягиваем текст до фиксированной ширины */
+  margin: 0; /* Убираем лишние отступы */
+  font-size: 18px;
+}
+
+.photo {
+  width: 160px; /* Размер изображения */
+  height: auto;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #E8EAEE;
+  color: #5c6168;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar h1 {
+  margin-top: 0;
+  font-size: 36px;
+  letter-spacing: 4px;
+}
+
+.photo-container {
+  position: relative;
+  text-align: left;
+  margin: 30px 0;
+}
+.profile-photo {
+  max-width: 300px;
+  border-radius: 40%;
+}
+
+.contact {
+  position: absolute;
+  top: 50px;
+  left: 400px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /*margin-bottom: 15px;*/
+}
+.contact img {
+  width: 24px;
+}
+
+.contact .email {
+  color: #5c6168;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 40px;
+}
+.contact .email:visited {
+  color: #5c6168;
+  text-decoration: none;
+}
+
+.contact .email:hover {
+  text-decoration: none;
+}
+
+.phone {
+  position: absolute;
+  top: 90px;
+  left: 400px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /*margin-bottom: 15px;*/
+}
+
+.phone img {
+  width: 24px;
+}
+.phone .email {
+  color: #5c6168;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.calendar {
+  position: absolute;
+  top: 150px;
+  left: 400px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.calendar img {
+  width: 24px;
+}
+.calendar .email {
+  color: #5c6168;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.telega {
+  position: absolute;
+  top: 200px;
+  left: 400px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /*margin-bottom: 15px;*/
+}
+.telega img {
+  width: 24px;
+}
+
+.telega .email {
+  color: #5c6168;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 40px;
+}
+.telega .email:visited {
+  color: #5c6168;
+  text-decoration: none;
+}
+
+.telega .email:hover {
+  text-decoration: none;
+}
+
+/*.contact .phone {*/
+/*  color: #5c6168;*/
+/*  text-decoration: none;*/
+/*  font-size: 20px;*/
+/*  margin-left: 40px;*/
+/*}*/
+
+
+
+.job-title {
+  font-size: 20px;
+  /*display: flex;*/
+  align-items: center;
+  /*letter-spacing: 2px;*/
+}
+
+
+.sidebar a {
+  color: #5c6168;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: dotted;
+}
+
+.main-content {
+  width: 70%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  display: inline-block;
+  border-bottom: 2.0px solid #5C6168;
+  color: #5C6168;
+  padding-bottom: 5px;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+.title{
+  color: #5C6168;
+  font-weight: bold;
+
+}
+.company-link {
+  font-weight: bold;
+  color: #5c6168;
+  text-decoration: none;
+}
+
+.company-link:visited {
+  color: #5c6168;
+}
+
+.company-link:hover {
+  text-decoration: underline;
+}
+.date-range {
+  font-weight: bold;
+  font-size: 16px;
+  color: #5C6168;
+  font-family: 'Inter', sans-serif; /* Используем другой шрифт */
+  display: inline-block;
+  margin-left: 450px;
+}
+
+.experience-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #5C6168;
+  line-height: 1.6; /* Увеличиваем читаемость текста */
+}
+
+.experience-description strong {
+  color: #5C6168; /* Выделение заголовков разделов внутри описания */
+}
+.experience-description li {
+  font-weight: normal; /* Убираем жирность */
+  color: #5C6168; /* Устанавливаем стандартный цвет текста */
+}
+.links {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* Располагаем ссылки вертикально */
+  gap: 10px; /* Отступы между ссылками */
+}
+
+.links li {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Отступ между иконкой и текстом */
+  max-width: 100%; /* Ограничиваем ширину */
+}
+
+.links img {
+  width: 48px; /* Размер иконок */
+  height: 48px;
+}
+
+.links a {
+  color: #5C6168;
+  text-decoration: none;
+  font-size: 24px;
+  overflow-wrap: break-word; /* Перенос длинного текста */
+}
+
+.links a:hover {
+  text-decoration: none;
+}
+h3 {
+  color: #5C6168;
+  font-size: 16px;
+  font-style: normal;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 7px;
+}
+h4{
+  /*color: #5C6168;*/
+  font-size: 16px;
+  /*font-style: normal;*/
+}

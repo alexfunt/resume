@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  resume-app:
+    image: nginx:alpine
+    container_name: alexfuntov-site
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+      - ./style.css:/usr/share/nginx/html/style.css
+      - ./images:/usr/share/nginx/html/img
+      - /etc/letsencrypt/live/alexfuntov.ru/fullchain.pem:/etc/nginx/fullchain.pem:ro
+      - /etc/letsencrypt/live/alexfuntov.ru/privkey.pem:/etc/nginx/privkey.pem:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "80:80"

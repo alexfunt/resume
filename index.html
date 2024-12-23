@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Резюме</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="resume-container">
+  <div class="sidebar">
+    <h1>Фунтов Александр</h1>
+    <p class="job-title">
+      BACKEND DEVELOPER
+    </p>
+    <p><img src="images/location.svg" alt="Локация"> Санкт-Петербург, Россия</p>
+    <h2>ОБРАЗОВАНИЕ</h2>
+    <ul>
+      <h3>Высшее Образование</h3>
+      <li>Санкт-Петербургский Политехнический Университет Петра Великого</li>
+      <li>2021 – н/д</li>
+      <li>Специализация - Технология разработки и сопровождения качественного программного продукта
+      </li>
+      <li>Специальность - Программная инженерия
+      </li>
+      <li>Факультет - Институт компьютерных наук и кибербезопасности
+      </li>
+      <h3>Курс</h3>
+      <li>Geek Brains</li> <li> 2024 – н/д</li> <li> Курс Big Data / ML</li> <li>Диплом о переподготовке.</li>
+      <h3>Курс</h3>
+      <li>Java Rush</li> <li>2024</li>  <li>OOP / Multithreading</li>
+    </ul>
+    <h2>НАВЫКИ</h2>
+    <div class="skills">
+      <div class="skill-item">
+        <p>KOTLIN</p>
+        <img src="images/kotlin.svg" alt="Kotlin" class="photo">
+      </div>
+      <div class="skill-item">
+        <p>JAVA</p>
+        <img src="images/java.svg" alt="Java" class="photo">
+      </div>
+      <div class="skill-item">
+        <p>SQS/SQL</p>
+        <img src="images/sqs.svg" alt="Sqs" class="photo">
+      </div>
+      <div class="skill-item">
+        <p>DynamoDB</p>
+        <img src="images/dynamo.svg" alt="Dynamo" class="photo">
+      </div>
+      <div class="skill-item">
+        <p>Git</p>
+        <img src="images/git.svg" alt="Git" class="photo">
+      </div>
+      <div class="skill-item">
+        <p>Scala</p>
+        <img src="images/scala.svg" alt="Scala" class="photo">
+      </div>
+      <div class="skill-item">
+        <p>Python</p>
+        <img src="images/python.svg" alt="Python" class="photo">
+      </div>
+      <div class="skill-item">
+        <p>AWS</p>
+        <img src="images/aws.svg" alt="Aws" class="photo">
+      </div>
+      <div class="skill-item">
+        <p>C++</p>
+        <img src="images/c.svg" alt="C" class="photo">
+      </div>
+    </div>
+  </div>
+  <div class="main-content">
+    <section>
+      <div class="photo-container">
+        <img src="images/photo.svg" alt="Фотография" class="profile-photo">
+      <div class="contact">
+        <img src="images/pismo.svg" alt="Иконка письма">
+        <a href="mailto:sasha_funtov29@mail.ru" class="email">sasha_funtov29@mail.ru</a>
+      </div>
+        <div class="phone">
+          <img src="images/phone.svg" alt="Иконка телефона">
+          <a class="email">+7 (995) 632-65-91</a>
+        </div>
+        <div class="calendar">
+          <img src="images/calendar.svg" alt="Иконка календаря">
+          <a class="email">29.01.2004</a>
+        </div>
+        <div class="telega">
+          <img src="images/telega.svg" alt="Иконка телеги">
+          <a href="https://t.me/alexfunt29" class="email">@alefunt29</a>
+        </div>
+      </div>
+      <h2>О СЕБЕ</h2>
+      <div class="experience-description">Занимаюсь разработкой около 3 лет. Я начал с задач школьных на Питоне. В университете программировал алгоритмы на C++/SystemС для микропроцессоров, а также на SQL программы, связанные с запросами в БД. Недавно создали проект который связан с бурениен скважин для добычи питьевой воды в Африке.  В свободное время я прохожу курс Data Science.</div>
+    </section>
+    <section>
+      <h2>ОПЫТ</h2>
+      <ul>
+        <p>
+          <strong> <a class="title"/>Backend Developer</strong><br>
+          <strong> <a href="https://t.me/aqua_elephant_bot" class="company-link">Aqua - Elephant</a> </strong>
+          <span class="date-range">июнь 2024 – н/д (5 месяцев)</span>
+        </p>
+        <div class="experience-description">
+        Разрабатывал и сопровождаю бэкэнд-инфраструктуру WEB 2.0 mini-apps в Telegram. Написание бизнес процессов внутри приложения + интеграционное тестирование
+        <li>
+          <strong>Cloud Architecture & Backend Development: </strong> <br>
+          Внедрил высокопроизводительный бэкэнд, используя Kotlin, Ktor, REST/SSE API, DynamoDB, SQS, Redis, Sentry и TestContainers. Конвейер данных с использованием AWS Glue для эффективной обработки крупномасштабных наборов данных
+        </li>
+        <li>
+          <strong>Infrastructure as Code: </strong> <br>
+          Настройка CI/CD
+        </li>
+        <li>
+          <strong>Data & Analytics: </strong> <br>
+          Облачное хранение в DynamoDb, так как в нашем случае для быстрой обработки данных нужен был Mapping. Но в последствии для тех данных, которые не требуют частых запросов писал миграцию в SQS на Scala. Для real-time changing использовал Redis Cache
+        </li>
+        <li>
+           <br>
+          Помимо разработки и тестирования, постоянно следил за процессом пользовательской деятельности внутри приложения и добавлял/изменял бизнес процессы игры для лучшего user experience
+        </li>
+          <br>
+        </div>
+        <p>
+          <strong> <a class="title"/> Стартап-студия Алмазова</strong>
+        <span class="date-range">(2024)</span>
+        </p>
+        <div class="experience-description" >
+          <li>
+          Создание алгоритма расчета VO2, лендинга, реализация на C++.
+          </li>
+        </div>
+      </ul>
+    </section>
+    <h2>ССЫЛКИ</h2>
+    <ul class="links">
+      <div class="links">
+      <li><img src="images/github.svg"> <a href="https://github.com/alexfunt" class="github">GitHub</a></li>
+      </div>
+      <div class="links1">
+      <li><img src="images/linked.svg"> <a href="https://www.linkedin.com/in/alex-funtov-358786321" class="linked">LinkedIn</a></li>
+      </div>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
